@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Dongle:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- loader -->
+
+    <div class="load-game">
+        
+        <div class="title-load">TIC TAC TOE</div>
+
+        <div class="load-bar">
+            <div class="anim-bar">
+                <div class="logo">
+                    <p>X</p>
+                    <p>O</p>
+                    <p>T</p>
+                    <p>O</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="wrapper-player">
+
+        <div class="square-background">
+            <div class="title">TIC <span>TAC-TOE</span></div>
+            <p class="xo">X</p><p class="xo">0</p><p class="xo">X</p><p class="xo">0</p><p class="xo">X</p><p class="xo">0</p>
+        </div>
+       
+        <form id="formAction">
+            <div class="champs-player">
+                <label>Player 1</label>
+                <input class="player p1" type="text" onfocus="this.placeholder=''" onblur="this.placeholder = 'enter your name'"  value="" placeholder="enter your name" />
+                <span class="error" id="errorname"></span>
+            </div>
+            
+            <div class="champs-player">
+                <label class="label2">Player 2</label>
+                <input class="player p2" type="text" onfocus="this.placeholder=''" onblur="this.placeholder = 'enter your name'" value="" placeholder="enter your name" />
+                <span class="error" id="errorname"></span>
+            </div>
+
+            <div class="buttonForm">
+                <input id="addPlayer" value="Start Game" type="submit" >
+            </div>
+            
+            <!-- <input type="file" id="files" name="files[]" multiple /> -->
+        </form>
+        
+
+        
+    </div>
+    
+    <div class="wrapper">  
+
+        <div class="whoBegin">
+            <p id="first-turn"> </p>
+            BEGIN
+        </div>
+        
+        
+        <div class="top_wrapper">            
+            <div class="game-container">
+
+                <div class="userP">
+                    <div class="user user1"></div>
+                    <div class="pBlock">
+                        <div class="turnP1"></div> <div class="turnP1"></div><div class="turnP1"></div> <div class="turnP1"></div><div class="turnP1"></div>
+                    </div>  
+                </div>
+
+                <div class="game-wrapper" id="game-wrapper">
+                    <div id="h" class="case" data-value="0"></div>
+                    <div id="h" class="case" data-value="1"></div>
+                    <div id="h" class="case" data-value="2"></div>
+                    <div id="h" class="case" data-value="3"></div>
+                    <div id="h" class="case" data-value="4"></div>
+                    <div id="h" class="case" data-value="5"></div>
+                    <div id="h" class="case" data-value="6"></div>
+                    <div id="h" class="case" data-value="7"></div>
+                    <div id="h" class="case" data-value="8"></div>
+                </div>
+
+                <div class="userP">
+                    <div class="user user2"></div>
+                    <div class="pBlock">
+                        <div class="turnP2"></div> <div class="turnP2"></div><div class="turnP2"></div> <div class="turnP2"></div><div class="turnP2"></div>
+                    </div>  
+                </div>
+
+               
+            </div>
+
+        
+            <div id="tasks"></div>
+            <output id="list"></output>
+
+            <div class="win-game">
+                <h2 class="message"></h2>
+                <button class="restart">NEW GAME</button>
+            </div>
+
+            
+
+        </div>
+
+        <div class="bottom_wrapper">
+            <dive class="line"></dive>
+            <h3>SCOREBOARD OF ALL WINNERS</h3>
+            <div class="score">
+                
+            </div>
+        </div>
+
+    </div>
+
+<script defer type="text/javascript" src="morpion.js"></script>
+</body>
+</html>
